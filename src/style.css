@@ -1,1 +1,48 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.carta {
+  width: 300px;
+  height: 410px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.simbolo {
+  font-size: 80px;
+  position: absolute;
+}
+
+#simboloArriba {
+  top: 10px;
+  left: 10px;
+}
+
+#simboloAbajo {
+  bottom: 10px;
+  right: 10px;
+}
+
+.invertido {
+  transform: rotate(180deg);
+}
+
+.numero {
+  font-size: 150px;
+  text-align: center;
+  margin: auto;
+}

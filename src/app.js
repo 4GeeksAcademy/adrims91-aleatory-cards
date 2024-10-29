@@ -7,5 +7,34 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+  const numeros = [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "J",
+    "Q",
+    "K",
+    "A"
+  ];
+  const simbolos = ["♦", "♥", "♣", "♠"];
+
+  function generarCarta() {
+    const numeroAleatorio = Math.floor(Math.random() * numeros.length);
+    const simboloAleatorio = Math.floor(Math.random() * simbolos.length);
+
+    const numero = numeros[numeroAleatorio];
+    const simbolo = simbolos[simboloAleatorio];
+
+    document.getElementById("numero").textContent = numero;
+    document.getElementById("simboloArriba").textContent = simbolo;
+    document.getElementById("simboloAbajo").textContent = simbolo;
+  }
+
+  generarCarta();
 };
