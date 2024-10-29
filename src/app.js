@@ -34,6 +34,12 @@ window.onload = function() {
     document.getElementById("numero").textContent = numero;
     document.getElementById("simboloArriba").textContent = simbolo;
     document.getElementById("simboloAbajo").textContent = simbolo;
+
+    if (simbolo === "♦" || simbolo === "♥") {
+      document.getElementById("simboloArriba").classList.add("rojo");
+      document.getElementById("simboloAbajo").classList.add("rojo");
+      document.getElementById("numero").classList.add("rojo");
+    }
   }
 
   generarCarta();
